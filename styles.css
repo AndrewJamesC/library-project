@@ -1,0 +1,11 @@
+.hide {
+    display: none;
+}
+
+.Read {
+    background-color: rgba(34, 220, 17, 0.233);
+}
+
+.Not{
+    background-color: rgba(255, 0, 0, 0.297);
+}

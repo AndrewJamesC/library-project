@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <table id="library-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Have you read it?</th>
+                <th>Delete Book</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <button onclick="showForm()" id="add-new-book-button">Add a new book</button>
+    <form id="new-book-form" class= "hide">
+        <label for="new-book-title">Title
+            <input id="new-book-title" type="text" name="title" required>
+        </label>
+        <label for="new-book-author">Author
+            <input id="new-book-author" type="text" name="author" required>
+        </label>
+        <label for="new-book-pages">Pages
+            <input id="new-book-pages" type="number" name="pages" required>
+        </label>
+        <fieldset>
+            <legend>Have you read the book?</legend>
+            <label for="new-book-read">Read
+                <input id="new-book-read" type="radio" name="read" value="Read" required>
+            </label>
+            <label for="new-book-read">Not read
+                <input id="new-book-not-read" type="radio" name="read" value="Not read" required>
+            </label>
+        </fieldset>
+        <button id="new-book-submit-button">Submit</button>
+    </form>
+</body>
+</html>
